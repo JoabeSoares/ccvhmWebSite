@@ -1,0 +1,85 @@
+/* Estilo do corpo */
+body {
+    font-family: Merriweather, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d32c4f;
+    color: white;
+    padding: 4px 0;
+    text-align: center;
+}
+
+/* Menu Lateral */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#3a3939;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 70px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    padding-top: 1.2ch;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Botão para abrir o menu */
+.openbtn {
+    font-size: 31px;
+    cursor: pointer;
+    background-color: #3a3939;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}
+
+/* Conteúdo */
+.content {
+    margin-left: 0;
+    padding: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3a3939;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
