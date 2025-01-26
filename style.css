@@ -1,24 +1,87 @@
 /* Estilo do corpo */
 body {
-    font-family: Merriweather, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #b4adaf;
-    color: #032066;
-    padding: 1px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 10px 20px;
+    background-color: #b1040e;
+    color: white;
+}
+
+/* Título do site */
+.site-title {
+    font-size: medium;
+    font-weight: bold; /* Mantém o título em negrito */
+    margin: 0;
+    font-weight: normal;
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: medium;
+    font-family: Stanford, Source Serif Pro, Georgia, Times, Times New Roman, serif !important;
 }
 
 menu {
-    background-color: #032066;
+    text-align: right;
     color: #f1f1f1;
-    padding: 5px 0;
-    
+    padding: 0px 0;
+    padding-right: 10px;
+    padding-top: 10 ;
+}
+
+.logo {
+    display: flex;
+    align-items: center;  /* Alinha o logo e o título verticalmente */
+}
+
+.logo-img {
+    width: 40px;  /* Ajuste o tamanho do logo */
+    height: auto;
+    margin-right: 10px;  /* Espaço entre o logo e o título */
+    margin-left: 0px;
+}
+
+.logo h1 {
+    font-size: normal;
+}
+
+p {
+    text-align: center;
+}
+
+/* Estilo do menu de navegação */
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
 }
 
 a:visited {
@@ -87,15 +150,15 @@ a:visited {
 }
 
 /* Rodapé */
-footer {
+/* footer {
     background-color: #032066;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: static;
-    bottom: 0;
-    width: 100%;
-}
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  
+} 
+*/
 
 .container {
     display: flex;
@@ -199,3 +262,51 @@ footer {
 .carousel-indicators .active {
     background-color: white;
 }
+
+/* Estilos das atividades */
+.activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com tamanhos iguais */
+    gap: 20px; /* Espaçamento entre as caixas */
+    width: calc(100% - 40px); /* Garante que os espaços nas laterais sejam simétricos */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+    padding-top: 15px;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+}
+
+
+.activity {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+}
+
+.activity img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.activity p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.activity:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
