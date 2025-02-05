@@ -14,6 +14,9 @@ header {
     padding: 10px 20px;
     background-color: #8c1515;
     color: white;
+    position: fixed;
+    width: 98%;
+    /* z-index: 9999; */
 }
 
 /* Título do site */
@@ -148,7 +151,9 @@ a:visited {
 /* Conteúdo */
 .content {
     margin-left: 0;
-    padding: 20px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 
 /* Rodapé */
@@ -158,7 +163,9 @@ a:visited {
     text-align: center;
     padding: 10px 0;
     width: 100%; 
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    bottom: 0;  
+    position: fixed;
 } 
 
 
@@ -166,8 +173,16 @@ a:visited {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    width: 100%;
+    width: 50%;
     padding: 20px;
+}
+
+.containerDev{
+    padding-top: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
 }
 
 
